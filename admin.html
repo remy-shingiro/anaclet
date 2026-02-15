@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AutoWorld | Admin Dashboard</title>
+    <link rel="stylesheet" href="admin-style.css">
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="admin-container">
+        <aside class="sidebar">
+            <div class="logo">Auto<span>Admin</span></div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">Dashboard</a></li>
+                    <li><a href="#">Manage Cars</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+            <button class="logout-btn">Logout</button>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <h2>Car Inventory</h2>
+                <button class="btn-add">+ Add New Car</button>
+            </header>
+
+            <section class="stats">
+                <div class="stat-card">Total Cars: 12</div>
+                <div class="stat-card">New Messages: 5</div>
+            </section>
+
+            <table class="car-table">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Car Name</th>
+                        <th>Category</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="admin-car-list">
+                    <tr>
+                        <td><img src="https://images.unsplash.com/featured/?tesla" width="50"></td>
+                        <td>Tesla Model S</td>
+                        <td>Electric</td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    
+
+</body>
+</html>
+
+
+
